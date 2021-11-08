@@ -1,2 +1,2 @@
 # My-Carrer-Website
-All in one solution for a beginner.
+To provide one platform for beginners, intermediate learners ,learning competitive coding , practicing problems , applying for internships and jobs).
