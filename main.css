@@ -1,0 +1,556 @@
+body{
+	margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 1.3rem;
+    background-image: linear-gradient(to right,pink,orange);
+    background-size: cover;
+    display:flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+/*********--------CSS ON HEADER CONTAINER DIV--------**********/
+#header{
+    background-color: black;
+    position:sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+/*************-----------Website Logo------------**************/
+#mycareer{
+	color: white;
+	font-size:1.5rem;
+	animation:mycareer 1.5s linear 0s infinite alternate;
+}
+@keyframes mycareer {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: skyblue;}
+  100% {color: #70fb67;}
+}
+#icon-name{
+	padding-left:0.5%;
+}
+#website-logo{
+    color: blue;
+}
+#icon-boundary{
+	padding: 4px;
+	background-color: white;
+	border:1px solid white;
+	border-radius: 50%;
+}
+.in-block{
+	display: inline-block;
+}
+/***-----------------------Main Menu in Header-----------------*/
+#main-menu li a{
+	text-decoration: none;
+	color: white;
+}
+#main-menu li a:hover{
+	color: #e5e3a2;
+}
+#main-menu li{
+	display: inline-block;
+	padding-left: 7px;
+	text-decoration: none;
+}
+#bars{
+	display: none;
+	
+}
+#bars i{
+	color: white;
+}
+.dropdown-list{
+	display:none;
+	background-color: black;
+	position: fixed;
+	top: 6.5vw;
+	height: 50%;
+    right: 1vw;
+    box-shadow:5px 5px 10px 18px #efdfdf7a;
+    z-index: 10;
+    width: 200px;
+    perspective: 4000px;
+    line-height: 2rem;
+}
+/******---------------Buttons in header for sigin-------------********/
+.signin{
+	background-color: white;
+	color: blue;
+	border:1px solid blue;
+}
+.signin:hover{
+	background-color: white;
+	font-weight: bolder;
+	text-decoration: underline;
+	color: black;
+	border:2px solid black;
+}
+.started{
+	background-color: blue;
+	color: white;
+	border:1px solid white;
+	font-size: 1.1rem;
+}
+.started:hover{
+	text-decoration: underline;
+}
+/**********----------NOTIFICATION BELL----------***********/
+.notification i{
+	color: white;
+}
+.notification i:hover{
+	color: orange;
+}
+.notification i:active{
+	color:red;
+}
+/*********---------------SIGN IN FORM-------*********/
+#innersigninform{
+	padding:2%;
+}
+
+#signinform{
+	display: none;
+	padding:0.4%;
+	background-color: #e5eff1eb;
+	position: fixed;
+	top: 7vw;
+	height: 45%;
+    right: 1vw;
+    z-index: 11;
+    width: 300px;
+    perspective: 4000px;
+    border:2px solid black;
+    box-shadow:5px 5px 10px 18px #efdfdf7a;
+}
+#signinform label{
+	font-weight: bold;
+}
+small{
+	font-size: 0.9rem;
+}
+#signinform center button{
+	width: 68%;
+	height: 7%;
+	font-size: 1rem;
+	padding-top:1%;
+}
+#signinformbutton{
+	height: 8%;
+	background-color: blue;
+	width: 40%;
+	color: white;
+	font-size: 1rem;
+	border:1px solid blue;
+}
+#signinformbutton:hover{
+	transform: scale(1.2);
+}
+/*********---------------CAROUSEL------------**************/
+#outer-carousel {
+	position: relative;
+	left: 0.3vw;
+	width: 80%;
+	margin-top: 3.6%;
+	transition: all ease-in-out 1s;
+}
+#carousel {
+	position: absolute;
+	left: 0.2%;
+	width: 70%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	overflow: visible;
+	justify-content: space-between;
+	vertical-align:center;
+}
+#carousel img{
+	height: 22vw;
+	width: 34vw;
+	border-radius: 10%;
+	transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+#carousel img:nth-child(1) {
+	position: relative;
+	left: 60vw;
+	z-index: 2;
+	perspective: 3000px;
+}
+#carousel img:nth-child(2) {
+	height: 24vw;
+	width: 42vw;
+	z-index: 3;
+}
+#carousel img:nth-child(3) {
+	position: relative;
+	right: 65vw;
+	z-index: 1;
+}
+#carousel img:hover {
+	z-index: 4;
+	box-shadow: 0px 0px 15px 0.1px black;
+    transform:scale(1.2);
+}
+/*************----------------FEATURES----------------*****************/
+#features{
+	position: relative;
+	top: 28vw;
+	left: 10%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: auto;
+}
+#features fieldset{
+	background-color: white;
+}
+#features fieldset legend{
+	font-size: 1.5rem;
+	color: #0f0631;
+	font-weight: bolder;
+}
+.features-heading{
+	font-weight: bold;
+	font-size: 1.25rem;
+	color: #3C1053FF;
+}
+.feature-icon i{
+	border:5px solid #0f0631;
+	border-radius: 50%;
+	color: #0f0631;
+	padding: 4%;
+}
+#features div i:hover{
+	color: orange;
+}
+.feature-icon i:hover{
+	border:5px solid orange;
+}
+#features p:hover{
+	font-weight: bolder;
+}
+/*******-----------------AEROPLANE TRAVELLER--------------**************/
+.timeline{
+	position:relative;
+	width: 75%;
+		}
+.timeline-box{
+	position:relative;
+	width: 40%;
+	left: 20%;
+	margin:5px;
+		}
+.timeline-box:nth-child(2n){
+	left:80%;
+		}
+.timeline-divider{
+	position: absolute;
+	height: 85%;
+	width: 0%;
+	border:3px dashed;
+	top: 10%;
+	left: 70%;
+	}
+.timeline-traveller{
+	position: sticky;
+	top: 25%;
+	transform:rotate(90deg);
+	z-index: 2;
+	}
+.timeline-box:nth-child(2n+1)::after{
+	content:" ";
+	position:absolute;
+	top: 65%;
+	right:-26%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index:1;
+}
+.timeline-box:nth-child(2n)::after{
+	content:" ";
+	position:absolute;
+	top: 40%;
+	left:-28%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index:1;
+}
+/**************------------SOME BASIC COURSES------------------*********/
+#popular-courses{
+	position: relative;
+	top: 33vw;
+	left: 10%;
+	width: 80%;
+}
+#popular-courses fieldset{
+	background-color: white;
+}
+#popular-courses fieldset legend{
+	font-size: 1.5rem;
+	color: #0f0631;
+	font-weight: bolder;
+}
+.courses{
+	width: 30%;
+}
+/*********---------------BLOG PAGES----------**************/
+#blogpage {
+	position: relative;
+	top: 35vw;
+	left: 10%;
+	width: 80%;
+}
+#blogpage fieldset{
+	background-color: #fbfbfc;
+}
+#blogpage fieldset legend{
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #0f0631;
+	font-weight: bolder;
+}
+#blogpage fieldset legend a:link{
+	color: #0f0631;
+	text-decoration: none;
+}
+#blogpage fieldset legend a:visited{
+	color: #0f0631;
+	text-decoration: none;
+}
+.blog-box{
+	width: 40%;
+	padding: 1%;
+	margin: 2%;
+	font-weight: bold;
+}
+#blogpage img{
+	width:90%;
+	border:1px solid black;
+	border-radius: 10%;
+}
+/********----------------PRACTICE-------------*************/
+#practice{
+	position: relative;
+	top: 38vw;
+	left: 10%;
+	width:80%;
+	
+}
+#practice1{
+	font-weight:bold;
+}
+#practice fieldset{
+	background-color: #fbfbfc;
+	padding: 2%;
+}
+
+#practice fieldset legend{
+	font-size: 1.52rem;
+	text-decoration: none;
+	color: #0f0631;
+	font-weight: bold;
+}
+#practice a{
+	font-weight: bolder;
+	text-decoration: none;
+	color: #0f0631;
+}
+#practice a:link{
+	font-weight: bolder;
+	color: #0f0631;
+	text-decoration: none;
+}
+#practice a:hover{
+	text-decoration: underline;
+	color: green;
+}
+#practice a:visited{
+	font-weight: bolder;
+	color: #0f0631;
+	text-decoration: none;
+}
+
+.heading{
+    padding-top: 0.5%;
+    border-top: 2px solid #0f0632;
+    color:#0f0632;
+    background-color:white;
+    box-sizing:20px;
+    text-align: center;
+    height:12%;
+    font-weight:bolder;
+    font-size:2rem;
+    font-family:-apple-system;
+}
+/************------------Features of JQUERY CSS-------------***********/
+#featuresjquery fieldset{
+    position: relative;
+    top: 9vw;
+    left: 10vw;
+}
+.hide{
+    display: none;
+}
+.headings{
+     text-decoration: underline;
+     font-weight: bold;
+     color:blue;
+ }
+/**********-----------------COURSES PLATFORM------------***********/
+#websitesjquery fieldset{
+    position: relative;
+    top: 15vw;
+    left: 10vw;
+}
+.display{
+     display:inline-block;
+}
+ .links{
+     font-size: x-medium;
+     font-weight: bold;
+     text-decoration: none;
+     color:#0f0632;
+ }
+ .links:hover{
+     color:red;
+     text-decoration: underline;
+ }
+ .links:active{
+     color:green;
+ }
+ .links:visited{
+      color:purple;
+ }
+ #head{
+     color:navy;
+     font-weight: bolder;
+     font-size: large;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .para{
+     font-size:1.3rem;
+ }
+ .images{
+     height:7%;
+     width:7%;
+     margin-left:2%;
+     box-shadow:0px 0px 30px grey;
+ }
+/*********---------------APPLY---------------**************/
+#apply {
+	position: relative;
+	top: 40vw;
+	left: 10%;
+	width: 80%;
+	
+}
+#apply fieldset{
+	background-color: #fbfbfc;
+	padding: 2%;
+}
+#apply fieldset legend{
+	font-size: 1.52rem;
+	text-decoration: none;
+	color: #0f0631;
+	font-weight: bold;
+}
+#apply div{
+	width: 32%;
+}
+/*********---------------FOOTER---------------*************/
+#footer{
+	position: relative;
+	top: 42vw;
+	padding: 1%;
+	color: white;
+	background-color: black;
+}
+#footer i{
+	color: white;
+	padding:3%;
+	border-radius: 50%;
+	vertical-align: top;
+}
+#contact-form input,textarea {
+    max-width: 90%;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    width: 90%;
+}
+#contactform{
+	min-width: 236px;
+	width: 40%;
+}
+#contactat{
+	margin-top: 40px;
+	min-width: 322px;
+	width: 40%;
+}
+.social-icon{
+	min-width: 180px;
+}
+#footer i:hover{
+	color: #e5e3a2;
+	box-shadow: 0px 0px 5px 5px lightgrey;
+}
+@media only screen and (max-width: 768px){
+	#footer {
+        flex-wrap: wrap;
+    }
+    #contactat{
+    	margin-top: 50px;
+    	margin-left: 20px;
+    }
+    #contactform{
+    	margin-top: 20px;
+    	margin-left:90px;
+    }
+    .resp-remove{
+    	display: none;
+    }
+    #bars{
+    	display: inline-block;
+		margin-right:5%;
+    }
+    #header-button{
+    	display: none;
+    }
+	.headings{
+	     overflow-x:auto;
+}
+	
+}
+/******-----------------HOVERABLE CLASSES-----------------*******/
+.menuhover{
+	text-decoration: underline;
+	font-weight: bold;
+	box-shadow: 0px 0px 7px 2px lightgrey;
+}
+.imagehover{
+	border-radius: 40%;
+	box-shadow: 0px 0px 10px 10px lightgrey;
+}
+.features-heading-hover{
+	font-weight: bolder;
+	font-size: 1.3rem;
+	text-decoration: underline;
+}

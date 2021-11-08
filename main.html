@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Carrer</title>
+        <!---------------Linked to Spreadsheet main.css ------------->
+        <link rel="stylesheet" href="main.css">
+        <!---------------Favicon-------------------->
+        <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon"> 
+        <!---------------Website Responsiveness----------->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-------------------jQuery Link------------------------>
+        <script src= "jquery.min.js"></script>
+        <!---------------Linked to Javascript main.js ------------->
+        <script type="text/javascript" src="main.js"></script>
+        <!--------------------FONT AWESOME--------------->
+        <script src="https://kit.fontawesome.com/147cd4e0c9.js" crossorigin="147cd4e0c9"></script>
+        
+    </head>
+    <body>
+        <div id="header">
+            <!------------Main icon and Website Name--------------->
+            <div class="in-block" id="icon-name">
+            <div id="icon-boundary" class="in-block">
+                <i class="fas fa-user-graduate fa-lg" id="website-logo"></i>
+            </div>
+            <span id="mycareer"><b>My Career</b></span>
+            </div>
+            <!---------------Main Navigation Menu------------------->
+            <ul id="main-menu" class="in-block resp-remove">
+                <li><a href="#topup" class="hoverable-menu">Home</a></li>
+                <li><a href="#study" class="hoverable-menu">Study</a></li>
+                <li><a href="#bloglink" class="hoverable-menu">Blog Page</a></li>
+                <li><a href="#practice1" class="hoverable-menu">Practice</a></li>
+                <li><a href="#apply1" class="hoverable-menu">Apply</a></li>
+                <li><a href="#contactat" class="hoverable-menu">Contact Us</a></li>
+            </ul>
+            <!----------------NOTIFICATION BELL-------------------->
+            <div class="notification" class="in-block">
+                <i class="fas fa-bell"></i></div>
+            <!------------------HEADER BUTTONS------------------>
+            <div id="header-button" class="in-block">
+            <button class="signin">Sign In</button>
+            <button class="started">Get Started</button>
+            </div>
+            <div id="bars">
+            <i class="fas fa-bars fa-lg"></i></div>
+        </div> 
+        <p id="topup"></p>
+        <div id="signinform"><i class="far fa-times-circle fa-lg" id="close" style="color: red;"></i>
+            <div id="innersigninform">
+            <form>
+            <table>
+                <tr>
+                    <td><LABEL>UserName : </LABEL></td>
+                    <td><input type="text" name="username"></td> 
+                </tr>
+                <tr><td><LABEL>Password : </LABEL></td>
+                    <td><input type="Password" name="password"></td>
+                </tr>
+                <tr><td colspan="2"><button type="submit" id="signinformbutton">Sign in</button> <sub style="font-size: 0.85rem;"><a href="#">Forgot Password ?</a></sub></td></tr>
+                <tr align="center"><td colspan="2"><hr width="44.8%" class="in-block"><small>OR</small><hr width="44.8%" class="in-block"></td></tr>
+            </table>
+            <center>
+                <button><i class="fab fa-facebook fa-lg"></i> Sign in with Facebook</button><br><br>
+               <button><i class="fab fa-google"></i> Sign in with Google</button>
+               <br>
+               <sub style="font-size: 0.9rem;"><a href="GetStarted.html">New User ? Create an Account</a></sub>
+           </center>
+            </form>
+         </div>
+        </div>
+        <div class="dropdown-list nav-menu">
+            <ul id="main-menu" class="in-block">
+                <li><a href="#topup" class="hoverable-menu">Home</a></li>
+                <br>
+                <li><a href="#study" class="hoverable-menu">Study</a></li>
+                <br>
+                <li><a href="#bloglink" class="hoverable-menu">Blog Page</a>
+                </li><br>
+                <li><a href="#practice1" class="hoverable-menu">Practice</a></li><br>
+                <li><a href="#apply1" class="hoverable-menu">Apply</a></li>
+                <br>
+                <li><a href="#contactat" class="hoverable-menu">Contact Us</a>
+                </li>
+                <li><button class="signin">Sign In</button></li>
+                <li><button class="started">Get Started</button></li>
+            </ul>
+        </div>
+ <!-------------------------------CAROUSEL------------------------------>
+        <div id="carousel-begin">
+        <div id="outer-carousel">
+            <div id="carousel">
+            <img src="Images/Carouselpic1.jfif">
+            <img src="Images/Carouselpic2.jfif">
+            <img src="Images/Carouselpic3.jfif">
+        </div>
+        </div>
+        </div><br>
+        <div></div>
+        <!-----------------------FEATURES------------------------>
+        <div id="features" style="display: block;">
+            <fieldset>
+                <legend align="center"><i class="fas fa-clipboard-list fa-lg"></i> Features</legend><br>
+                <DIV class="timeline">
+              <!------------------------FEATURE1----------------------->
+    <Div id="feature1" class="timeline-box">
+        <center>
+           <span class="features-heading">Explore</span><br><br>
+              <div class="feature-icon"><i class="fas fa-binoculars fa-3x"></i></div>
+                <p>Go through all the  courses <br> and discover your Interests</p></center>
+    </Div>
+              <!------------------------FEATURE2----------------------->
+    <Div id="feature2" class="timeline-box">
+        <center><span class="features-heading">Start a Course</span><br><br>
+                        <div class="feature-icon"><i class="fas fa-book-reader fa-3x color-change"></i></div>
+                    <p>Start a course of interest<br> and set goals of completion</p></center>
+    </Div>
+            <!------------------------FEATURE3----------------------->
+    <Div id="feature3" class="timeline-box">
+        <center><span class="features-heading">Be A Pro</span><br><br>
+                        <div class="feature-icon"><i class="fas fa-user-tie fa-3x"></i></div>
+                    <p>Practise and learn more<br> Solve problems like a professional</p></center>
+    </Div>
+            <!------------------------FEATURE4----------------------->
+    <Div id="feature4" class="timeline-box">
+        <center><span class="features-heading">Go For Training</span><br><br>
+                        <div class="feature-icon"><i class="fas fa-building fa-3x"></i></div>
+                    <p>Learn From Industrial Experts<br>Boost your experience and skills</p></center>
+    </Div>
+            <!------------------------FEATURE 5----------------------->
+    <Div id="feature5" class="timeline-box">
+        <center><span class="features-heading">Apply For Job</span><br><br>
+                        <div class="feature-icon"><i class="fas fa-briefcase fa-3x"></i></i></div>
+                    <p>Now you Have a Solid Resume<br>Relax and see your career grow</p></center>
+    </Div>
+    <div class="timeline-divider">
+        <div class="timeline-traveller"><i style="color:#ff7907" class="fas fa-plane fa-lg"></i></div>
+    </div>
+        </DIV>
+            </fieldset>
+        </div>
+        <!--------------------SOME BASIC COURSES--------------------->
+        <div id="popular-courses">
+            <fieldset id="study">
+                <legend align="center"> <i class="far fa-bookmark fa-lg"></i> &ensp;Some Basic Courses </legend><br>
+                <center>
+                    <div id="course1" class="in-block courses">
+                    <a href="BasicCoursesPython.html">
+                    <img src="Images/pythonprogramingicon.png" width="32%" class="hoverable-image"></a><br>
+                    <b>Python</b> 
+                    </div>
+                    <div id="course2" class="in-block courses">
+                    <a href="BasicCoursesJava.html">
+                    <img src="Images/javaprogramingicon.png" width="32%" height="30%" class="hoverable-image"></a><br>
+                    <b>Java</b> 
+                    </div>
+                    <div id="course3" class="in-block courses">
+                    <a href="BasicCoursesHtml.html">
+                    <img src="Images/htmlprogramingicon.png" width="32%" class="hoverable-image">
+                </a><br>
+                    <b>HTML</b> 
+                    </div><br><br><br>
+                    <div id="course4" class="in-block courses">
+                    <a href="BasicCoursesCss.html">
+                    <img src="Images/cssprogramingicon.png" width="32%" class="hoverable-image"></a><br>
+                    <b>CSS</b> 
+                    </div>
+                    <div id="course5" class="in-block courses">
+                    <a href="BasicCoursesJavascript.html">
+                    <img src="Images/jsprogramingicon.jpg" width="32%" class="hoverable-image"></a><br>
+                    <b>Javascript</b> 
+                    </div>
+                    <div id="course6" class="in-block courses">
+                    <a href="BasicCoursesJquery.html">
+                    <img src="Images/jqueryprogramingicon.png" width="32%" class="hoverable-image"></a><br>
+                    <b>jQuery</b> 
+                    </div>
+            </center><br>
+            </fieldset>
+        </div><br>
+        <!------------------------BLOG PAGE--------------------------->
+        <div id="blogpage">
+            <fieldset>
+                <legend align="center">
+                    <a href="blogPage1.html"><i  id="bloglink" class="fas fa-edit fa-lg"></i>&ensp;Blogs</a></legend><br>
+                <center>
+                <div id="blog1" class="in-block blog-box">
+                    <a href="blogPage1.html#blog1">
+                    <img src="Images/blog1mainpic.jfif" class="hoverable-image">
+                    </a>
+                    Which Language Should You Learn As A Beginner ?
+                </div>
+                <div id="blog2" class="in-block blog-box">
+                    <a href="blogPage1.html#blog2">
+                    <img src="Images/blog2mainpic.jfif" class="hoverable-image">
+                </a>
+                    How To Grab An Internship in your 3rd Year ?
+                </div>
+                <div id="blog3" class="in-block blog-box">
+                    <a href="blogPage1.html#blog3">
+                    <img src="Images/blog3mainpic.png" class="hoverable-image">
+                </a>
+                    How To Become a Full Stack Developer ?
+                </div>
+            </center>
+            </fieldset>
+        </div>
+        <br>
+<!-----------------------------PRACTICE------------------------------------>
+<div id="practice">
+    <fieldset>
+   <legend align="center" id="practice1"><i class="fas fa-award fa-lg"></i> Practice </legend>
+  <div>
+  <div id="head">In this site we will discuss some important terms and
+   the platform from where you can write code i.e code editor and test your skills:-</div>
+      <h3>First of all we talk about some terms that can definitely help you:</h3>
+<!-------------------------------IDE------------------------------------>
+         <h2>IDE:-</h2> 
+       <p class="para">
+        Whether you are new to this game or you are a veteran
+        player, you need an IDE (Integrated Development Environment)
+        or a code editor to showcase your coding skills and talent.
+        An IDE is a software that consists of common developer
+        tools into a single user-friendly GUI (Graphical User 
+        interface). An IDE majorly consists of a source code 
+        editor for writing software code, local build automation 
+        for creating a local build of the software like compiling 
+        computer source code. Lastly, it has a debugger, a program for 
+        testing other programs. An IDE can have many more features apart
+         from these & those vary for each IDE.</p>
+
+<!--------------------------CODE EDITOR---------------------------->
+
+         <h2>Code Editor:-</h2>
+        <p class="para">Code editors are also software; it is like a text editor with some added functionalities. It is not an IDE as an 
+        IDE has many developer tools. Depending upon the language 
+        one codes on the editor, it highlights special keywords and 
+        gives some suggestions. Sublime Text, Atom, Visual Studio Code
+         are some of the popular code editors.</p>
+         
+         <p class="para">There are many platform to explore but the top 5 platform for each of the language are:-</p>
+
+<!--------------------------FOR PYTHON-------------------------->
+
+          <div class="clicktoshow1 headings">For Python:</div>
+            <ul span id="show1" class="hide"> 
+            <li>PyCharm</li>
+                <img class="images" src="Images/pycharm.jpg" alt="image">
+                <ul class="display">
+                <li>Platform: Linux/macOS/Windows</li>
+                <li> Official website:
+				<a class="links" href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a></li><li>Type:IDE</li>
+                </ul><br><br>
+            <li>Spyder</li>
+                <img class="images" src="Images/spyder.png" alt="image">
+                <ul class="display">
+                <li>Platform: Linux/macOS/Windows</li>
+                 <li> Official website:
+				 <a class="links" href="https://github.com/spyder-ide/spyder">https://github.com/spyder-ide/spyder</a></li><li>Type:IDE</li></ul><br><br>
+            <li>IDLE</li>
+                <img class="images" src="Images/Idle.jpg" alt="image">
+                 <ul class="display">
+                 <li>Platform: Linux/macOS/Windows</li>
+                 <li> Official website:
+				 <a class="links" href="https://docs.python.org/3/library/idle.html">https://docs.python.org/3/library/idle.html</a></li><li>Type:IDE</li></ul><br><br>
+            <li> Pydev</li>
+                  <img class="images" src="Images/pydev.png" alt="image">
+                  <ul class="display">
+                  <li>Platform:GNU/Linux/macOS/Windows/Solaris</li>
+                  <li> Official website:
+				  <a class="links" href="https://www.eclipse.org/">https://www.eclipse.org/</a></li><li>Type:Python Text editor</li></ul><br><br>
+            <li> Sublime Text</li>
+                  <img class="images" src="Images/sublimepython.webp" alt="image">
+                        <ul class="display">
+                        <li>Platform: Linux/macOS/Windows</li>
+                        <li> Official website:
+						<a class="links" href="https://www.sublimetext.com/">https://www.sublimetext.com/</a></li><li>Type:Python Text editor</li>
+                        </ul>
+                    </ul><br>
+<!-------------------------FOR JAVA---------------------------->
+    <div class="clicktoshow2 headings">For Java:</div>
+         <ul span id="show2" class="hide">
+          <li>Eclipse</li><br>
+              <img class="images" src="Images/javaeclipse.png" alt="image">
+              <ul class="display">
+              <li>Platform: Windows, Linux, and macOS</li>
+              <li> Official website:
+			  <a class="links" href="https://www.eclipse.org/downloads/">https://www.eclipse.org/downloads/</a></li><li>Type:IDE</li></ul><br><br>
+           <li> IntelliJ IDEA</li>
+              <img class="images" src="Images/intellijjava.jpg" alt="image">
+               <ul class="display">
+               <li>Platform: Linux/macOS/Windows</li>
+               <li> Official website:
+			   <a class="links" href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></li><li>Type:IDE</li></ul><br><br>
+            <li>Apache NetBeans</li>
+              <img class="images" src="Images/apacheajva.png" alt="image">
+               <ul class="display">
+               <li>Platform:Windows, macOS, and Linux</li>
+               <li> Official website:
+			   <a class="links" href="https://netbeans.apache.org/">https://netbeans.apache.org/</a></li><li>Type:IDE</li></ul><br><br>
+            <li> Kite</li>
+                <img class="images" src="Images/javakite.png" alt="image">
+                 <ul class="display">
+                 <li>Platform:Windows, Linux, and macOS</li>
+                 <li> Official website:
+				 <a class="links" href="https://www.kite.com/">https://www.kite.com/</a></li><li>Type:IDE</li></ul><br><br>
+             <li>BlueJ</li>
+                <img class="images" src="Images/bluej.gif" alt="image">
+                 <ul class="display">
+                 <li>Platform: Windows, macOS, Linux and Ubuntu </li>
+                 <li> Official website:
+				 <a class="links" href="https://www.bluej.org/">https://www.bluej.org/</a></li><li>Type:IDE</li></ul></ul><br>
+<!---------------------------FOR HTML------------------------------->
+    <div class="clicktoshow3 headings">For HTML:</div>
+       <ul span id="show3" class="hide">
+          <li>Notepad++</li><br>
+            <img class="images" src="Images/notepad++html.png" alt="image">
+            <ul class="display">
+            <li>Platform: Windows, Linux, and macOS</li>
+            <li> Official website:
+			<a class="links" href= "https://notepad-plus-plus.org/downloads/">https://notepad-plus-plus.org/downloads/</a></li><li>Type:Free Source Code</li></ul><br><br>
+          <li>Apache Netbeans</li>
+            <img class="images" src="Images/apacheajva.png" alt="image">
+            <ul class="display"><li>Platform: Linux/macOS/Windows</li>
+            <li> Official website:
+			<a class="links" href="https://netbeans.apache.org/download/index.html">https://netbeans.apache.org/download/index.html</a></li><li>Type:Text-Editor</li></ul><br><br>
+          <li> Sublime Text Editor</li>
+            <img class="images" src="Images/sublimetexthtml.png" alt="image"><ul class="display">
+             <li>Platform:Windows, macOS, and Linux</li>
+            <li> Official website:
+			<a href="https://www.sublimetext.com/3">https://www.sublimetext.com/3</a></li><li>Type:Text-Editor</li>
+            </ul><br><br>
+           <li> Visual Studio Code</li>
+            <img class="images" src="Images/visualstudiopage.png" alt="image">
+            <ul class="display">
+            <li>Platform:Windows, Linux, and macOS</li>
+            <li> Official website:
+			<a class="links" href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a></li><li>Type:Source Code</li></ul><br><br>
+          <li>CofeeCupHTMLEditor</li>
+            <img class="images" src="Images/coffeecuphtml.png" alt="image">
+            <ul class="display">
+            <li>Platform: Windows, macOS, Linux </li>
+            <li> Official website:
+			<a class="links" href="https://www.coffeecup.com/html-editor/">https://www.coffeecup.com/html-editor/</a></li><li>Type:HTML Editor</li></ul></ul><br>
+
+<!--------------------------FOR CSS---------------------------------->
+    <div class= "clicktoshow4 headings">For CSS:</div>
+       <ul span id="show4" class="hide">
+            <li>UltraEdit</li>
+                <img class="images" src="Images/UltraEdit.jpg" alt="image">
+                <ul class="display">
+                <li>Platform: Windows,Microsoft and Linux</li>
+                <li> Official website:
+				<a href= "https://www.ultraedit.com/">https://www.ultraedit.com/</a></li>                         <li>Type:Text-Editor</li></ul><br><br>
+            <li>Visual Studio Code</li>
+                <img class="images" src="Images/visualstudiopage.png" alt="image">
+                <ul class="display">
+                <li>Platform: Linux,macOS and Windows</li>
+                <li> Official website:
+				<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li> <li>Type: Open and free source</li></ul><br><br>
+            <li> NoteTab</li>
+                 <img class="images" src="Images/notetab.jpg" alt="image">
+                 <ul class="display">
+                 <li>Platform:Windows, macOS, and Linux</li><li> Official website:<a href="https://www.notetab.com/">https://www.notetab.com/</a></li><li>Type:HTML Editor</li>
+                                </ul><br><br>
+            <li> Atom </li>
+                <img class="images" src="Images/atom.png" alt="image">
+                <ul class="display">
+                <li>Platform:Windows, Linux, and macOS</li>
+                <li> Official website:
+				<a href="https://atom.io/">https://atom.io/</a></li>                           
+                <li>Type:Free open source code</li>
+                </ul><br><br>
+            <li>Komodo IDE</li>
+                <img class="images" src="Images/kamodo.png" alt="image">
+                    <ul class="display">
+                    <li>Platform: Windows, macOS, Linux </li>
+                    <li> Official website:
+					<a href="https://www.activestate.com/products/komodo-ide/">https://www.activestate.com/products/komodo-ide/</a></li><li>Type:IDE</li></ul></ul><br>
+<!------------------------FOR JAVASCRIPT--------------------------------->
+    <div class="clicktoshow5 headings" >For Javascript:</div>
+       <ul span id="show5" class="hide">
+        <li >Web Storm</li>
+            <img class="images" src="Images/webstorm.png" alt="image">
+             <ul class="display">
+             <li>Platform: Windows,Microsoft and Linux</li>
+            <li> Official website:
+			<a class="links" href= "jetbrains.com/webstorm/">jetbrains.com/webstorm/</a></li><li>Type:Smartest Editor</li></ul><BR><BR>
+        <li> RJ TextED</li>
+            <img class="images" src="Images/RjTextED.jpg" alt="image">
+            <ul class="display">
+            <li>Platform: Linux,macOS and Windows</li>
+            <li> Official website:
+			<a class="links" href="https://www.rj-texted.se/">https://www.rj-texted.se/</a></li><li>Type: Javascript Editor</li></ul><br><br>
+        <li> Atom</li>
+            <img class="images" src="Images/atom.png" alt="image">
+            <ul class="display">
+            <li>Platform:Windows, macOS, and Linux</li>
+            <li> Official website:
+			<a class="links" href="https://atom.io/">https://atom.io/</a></li>                           
+            <li>Type:macOS, Linux, and Microsoft Windows</li></ul><br><br>
+        <li>Sublime Text Editor </li>
+            <img class="images" src="Images/sublimetexthtml.png" alt="image"><ul class="display">
+            <li>Platform:Windows, Linux, and macOS</li>
+            <li> Official website:
+			<a class="links" href="https://www.sublimetext.com/">https://www.sublimetext.com/</a></li><li>Type: Open Source JS Editor</li></ul><br><br>
+         <li>Brackets</li>
+            <img class="images" src="Images/brackets.png" alt="image">
+                <ul class="display">
+                <li> Platform: Windows, macOS, Linux </li>
+                <li> Official website:
+				<a class="links" href="https://brackets.en.softonic.com/download">https://brackets.en.softonic.com/download</a></li><li> Type: Free open source code</li></ul></ul><br>
+<!--------------------------FOR JQUERY--------------------------------->
+    <div class="clicktoshow6 headings">For jQuery:</div>
+        <ul span id="show6" class="hide" >
+            <li>Sublime Text 3</li>
+                <img class="images" src="Images/sublimetexthtml.png" alt="image">
+                <ul class="display">
+                <li>Platform: Windows,Microsoft and Linux</li>
+                <li> Official website:
+				<a class="links" href= "https://packagecontrol.io/packages/jQuery">https://packagecontrol.io/packages/jQuery</a></li><li>Type:Source Editor</li></ul><br><br>
+            <li> Visual Code Studio </li>
+                <img class="images" src="Images/visualstudiopage.png" alt="image"><ul class="display">
+                <li>Platform: Linux,macOS and Windows</li>
+                <li> Official website:
+				<a class="links" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li><li>Type: Open Source Editor</li></ul><br><br>
+            <li> Web Storm</li>
+                <img class="images" src="Images/webstorm.png" alt="image">
+                <ul class="display">
+                <li>Platform:Windows, macOS, and Linux</li>
+                <li> Official website:
+				<a class="links" href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a></li> <li>Type:Editor</li></ul><br><br>
+            <li> Emacs</li>
+                <img class="images" src="Images/emacs.png" alt="image">
+                <ul class="display">
+                <li>Platform:Windows, Linux, and macOS</li>
+                <li> Official website:
+				<a class="links" href="https://www.gnu.org/software/emacs/">https://www.gnu.org/software/emacs/</a></li><li>Type: Open Source Editor</li>
+                            </ul><br><br>
+            <li>Notepad++</li>
+                <img class="images" src="Images/notepad++html.png" alt="image"><ul class="display">
+                <li>Platform: Windows, macOS, Linux </li>
+                <li> Official website:<a class="links" href="https://notepad-plus-plus.org/downloads/">https://notepad-plus-plus.org/downloads/</a></li><li>Type: Free open source code</li></ul>
+                    </ul>
+                </div>
+                <h4>Here are some of the websites for your practice : </h4>
+                <ul>
+            <li><a href="https://www.hackerrank.com/">HackerRank</a></li>
+                    <li><a href="https://www.codechef.com/">CodeChef</a></li>
+                    <li><a href="https://www.topcoder.com/challenges/?pageIndex=1">TopCoder</a></li>
+                    <li><a href="https://www.coderbyte.com/">CoderByte</a></li>
+                    <li><a href="https://www.codewars.com/">Codewars</a></li>
+                    <li><a href="https://www.codingame.com/">CodinGame</a></li>
+                </ul>
+            </fieldset>
+        </div>
+        <!--------------------------APPLLY--------------------------------->
+        <div id="apply">
+            <fieldset>
+                <legend align="center" id="apply1"><i class="fas fa-laptop-house fa-lg"></i> Apply </legend>
+                <h4 >Here are some of the websites where you can apply :</h4>
+                <center>
+                    <div class="in-block">
+                    <a href="https://www.glassdoor.co.in/index.htm?countryRedirect=true"><img src="Images/glassdoor.png" width="70%" class="hoverable-image"></a><br><b>GlassDoor</b>
+                    </div>
+                    <div class="in-block">
+                    <a href="https://www.linkedin.com/jobs/"><img src="Images/linkedin.png" width="70%" class="hoverable-image"></a><br><b>LinkedIn</b>
+                    </div>
+                    <div class="in-block">
+                    <a href="https://in.indeed.com/"><img src="Images/indeed.png" width="70%" class="hoverable-image"></a><br><b>Indeed</b>
+                    </div>
+                    <div class="in-block">
+                    <a href="http://www.freshersworld.com/"><img src="Images/freshersworld.jpg" width="70%" class="hoverable-image"></a><br><b>FreshersWorld</b>
+                    </div>
+                    <div class="in-block">
+                    <a href="https://www.naukri.com/"><img src="Images/naukri.png" width="70%" class="hoverable-image"></a><br><b>Naukri.com</b>
+                    </div>
+                    <div class="in-block">
+                    <a href="https://www.job.com/"><img src="Images/job.png" width="70%" class="hoverable-image"></a><br><b>Job.com</b>
+                    </div>
+                </center>
+            </fieldset>
+        </div>
+        <!------------------------FOOTER------------------------------>
+        <footer id="footer">
+         <a href="#topup"><i class="fas fa-angle-double-up fa-2x"></i></a>
+    <div id="contactat" class="in-block" >
+        <div class="in-block social-icon">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg "></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square fa-lg"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fab fa-linkedin fa-lg"></i></a>
+           </div><br><br>
+        In Case Of Urgent Queries Call us At : <br>+91-7676231536<br>+91-7678731536<br>
+      </div>
+      <div id="contactform" class="in-block">
+          <form class="in-block">
+           <input type="text" name="name" placeholder="Your NAME" required><br>
+            <input type="email" placeholder="Your EMAIL" name="email" required><br>
+            <textarea rows="3" cols="20" placeholder="Enter yor Queries if any....." required align="right"></textarea><br>
+            <button type="submit">Post</button>
+           </form>
+       </div>
+</footer>
+    </body>
+    
+</html>
