@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Carrer : Get Started</title>
+        <!---------------Linked to Spreadsheet GetStarted.css ------------->
+        <link rel="stylesheet" href="GetStarted.css">
+        <!---------------Favicon-------------------->
+        <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon"> 
+        <!---------------Website Responsiveness----------->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-------------------jQuery Link------------------------>
+        <script src= "jquery.min.js"></script>
+        <!---------------Linked to Javascript main.js ------------->
+        <script type="text/javascript" src="GetStarted.js"></script>
+        <!--------------------FONT AWESOME--------------->
+        <script src="https://kit.fontawesome.com/147cd4e0c9.js" crossorigin="147cd4e0c9"></script>
+        
+    </head>
+    <body>
+        <div id="header">
+            <!------------Main icon and Website Name--------------->
+            <div class="in-block" id="icon-name">
+            <div id="icon-boundary" class="in-block">
+                <i class="fas fa-user-graduate fa-lg" id="website-logo"></i>
+            </div>
+            <span id="mycareer"><b>My Career</b></span>
+            </div>
+            <!---------------Main Navigation Menu------------------->
+            <ul id="main-menu" class="in-block resp-remove">
+                <li><a href=" main.html#topup" class="hoverable-menu">Home</a></li>
+                <li><a href="main.html#study" class="hoverable-menu">Study</a></li>
+                <li><a href="main.html#bloglink" class="hoverable-menu">Blog Page</a></li>
+                <li><a href="main.html#practice" class="hoverable-menu">Practice</a></li>
+                <li><a href="main.html#apply1" class="hoverable-menu">Apply</a></li>
+                <li><a href="#contactat" class="hoverable-menu">Contact Us</a></li>
+            </ul>
+            <!----------------NOTIFICATION BELL-------------------->
+            <div class="notification" class="in-block">
+                <i class="fas fa-bell"></i></div>
+            <!------------------HEADER BUTTONS------------------>
+            <div id="header-button" class="in-block">
+            <button class="signin">Sign In</button>
+            <button class="started">Get Started</button>
+            </div>
+            <div id="bars">
+            <i class="fas fa-bars fa-lg"></i></div>
+        </div> 
+        <p id="topup"></p>
+         <div class="dropdown-list nav-menu">
+            <ul id="main-menu" class="in-block">
+                <li><a href="main.html#topup" class="hoverable-menu">Home</a></li>
+                <br>
+                <li><a href="main.html#study" class="hoverable-menu">Study</a></li>
+                <br>
+                <li><a href="main.html#bloglink" class="hoverable-menu">Blog Page</a>
+                </li><br>
+                <li><a href="main.html#practice1" class="hoverable-menu">Practice</a></li><br>
+                <li><a href="main.html#apply1" class="hoverable-menu">Apply</a></li>
+                <br>
+                <li><a href="#contactat" class="hoverable-menu">Contact Us</a>
+                </li>
+                <li><button class="signin">Sign In</button></li>
+                <li><button class="started">Get Started</button></li>
+            </ul>
+        </div>
+        <marquee width="100%" direction="left" height="100px" scrollamount="20" id="topup" ><h2 id= "marquee">Register For Free !!!!</h2></marquee>
+        <!-------------------------REGISTER FORM------------------------>
+        <div id="getstartedform">
+            <center><h1 class="in-block">Register</h1></center>
+                <FORM>
+                    <table  cellpadding="4" cellspacing="5">
+                        <tr>
+                            <td><label>Name : </label></td>
+                            <td><input type="text" name="name" required></td>
+                        </tr>
+                        <tr><td><label>Email : </label></td>
+                            <td><input type="email" name="email" required></td>
+                        </tr>
+                        <tr><td><label>Username : </label></td>
+                            <td><input type="text" name="username" pattern="(?=.*\d)(?=.*[A-Za-z]).{5,}" title="Must contain at least one number , Alphabets, and at least 5 or more characters" required></td>
+                        </tr>
+                        <tr><td><label>Password : </label></td>
+                            <td><input type="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[@#$_])(?=.*[A-Z]).{8,}" title="Must contain at least one number, special character (@,$,#,_) and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
+                        </tr>
+                        <tr>
+                            <td><LABEL>DOB : </LABEL></td>
+                            <td><input type="date" name="date" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender : </label></td>
+                            <td><input type="radio" name="gender" value="Male">Male 
+                                <input type="radio" name="gender" value="Female">Female 
+                            </td>
+                        </tr>
+                        <tr><td><label>City : </label></td>
+                            <td><input type="text" name="city" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Occupation : </label></td>
+                            <td><input type="radio" name="occupation" value="student">Student 
+                                <input type="radio" name="occupation" value="professional">Professional
+                                <input type="radio" name="occupation" value="other">Other</td>
+                        </tr>
+                        <tr>
+                            <td><label>Coding Level : </label></td>
+                            <td><select name="Level">
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select></td>
+                        </tr>
+                        <tr><td colspan="2">
+                            <input type="checkbox" name="terms" required="checked" id="mycheck" title="Must Check it"> <small> I accept Terms & Conditions of My Career Website.</small>
+                        </td></tr>
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit" id="registerbutton">Register</button> <small><a href="main.html#signin">Already a User? Signin</a></small></td>
+                        </tr>
+                    </table>
+                </FORM>
+        </div>
+            <center>
+        <!-------------------GOOGLE CALENDAR------------------->
+            <h4 class="in-block">Set Goals with Google Calendar :&ensp;</h4><a href="https://www.google.com/calendar/about/"><i class="far fa-calendar-alt fa-2x" id="calendarlink"></i></a><br>
+       
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/p_0HeokTrc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </center>
+             <!------------------------FOOTER------------------------------>
+        <footer id="footer">
+         <a href="#topup"><i class="fas fa-angle-double-up fa-2x"></i></a>
+    <div id="contactat" class="in-block" >
+        <div class="in-block social-icon">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg "></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square fa-lg"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fab fa-linkedin fa-lg"></i></a>
+           </div><br><br>
+        In Case Of Urgent Queries Call us At : <br>+91-7676231536<br>+91-7678731536<br>
+      </div>
+      <div id="contactform" class="in-block">
+          <form class="in-block">
+           <input type="text" name="name" placeholder="Your NAME" required><br>
+            <input type="email" placeholder="Your EMAIL" name="email" required><br>
+            <textarea rows="3" cols="20" placeholder="Enter yor Queries if any....." required align="right"></textarea><br>
+            <button type="submit">Post</button>
+           </form>
+       </div>
+</footer>
+    </body>
+    
+</html>
+            
